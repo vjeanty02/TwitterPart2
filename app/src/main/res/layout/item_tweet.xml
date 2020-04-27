@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="30dp">
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-21dp"
+        android:layout_toEndOf="@+id/tvName"
+        android:textColor="#A3A3A3"
+        android:textSize="14dp"
+        tools:text="vjeanty02" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:text="vjeanty02" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvScreenName"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:lastBaselineToBottomHeight=".5dp"
+        android:textSize="14dp"
+        tools:text="This is my Tweet!!" />
+
+    <TextView
+        android:id="@+id/tvTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFollowers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundGravity="center"
+        android:gravity="right"
+        android:textColor="#A3A3A3"
+        android:textSize="14dp"
+        tools:text="Post" />
+
+    <TextView
+        android:id="@+id/tvFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/tvFriends"
+        android:gravity="right"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        tools:ignore="RtlCompat"
+        tools:text="followers" />
+
+    <TextView
+        android:id="@+id/tvFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:gravity="right"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        tools:ignore="RtlCompat"
+        tools:text="Friends" />
+
+    <TextView
+        android:id="@+id/tvLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/tvFollowers"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        tools:ignore="RtlCompat"
+        tools:text="Likes" />
+
+    <TextView
+        android:id="@+id/tvLikes2"
+        android:layout_width="13dp"
+        android:layout_height="14dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/tvFollowers"
+        android:background="@drawable/heart"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>
+
